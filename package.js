@@ -1,10 +1,10 @@
 /* global Package, Npm */
 
 Package.describe({
-  name: 'aldeed:tabular',
-  summary: 'Datatables for large or small datasets in Meteor',
+  name: 'cycore:tabular-nobootstrap',
+  summary: 'Datatables for large or small datasets in Meteor (clone of aldeed:tabular without bootstrap)',
   version: '1.4.1',
-  git: 'https://github.com/aldeed/meteor-tabular.git'
+  git: 'https://github.com/CyCoreSystems/meteor-tabular-nobootstrap.git'
 });
 
 Npm.depends({
@@ -36,8 +36,6 @@ Package.onUse(function(api) {
   api.addFiles('server/tabular.js', 'server');
   api.addFiles([
     '.npm/package/node_modules/datatables/media/js/jquery.dataTables.js',
-    'client/lib/dataTables.bootstrap.js',
-    'client/lib/dataTables.bootstrap.css',
     'client/tabular.html',
     'client/util.js',
     'client/tableRecords.js',
